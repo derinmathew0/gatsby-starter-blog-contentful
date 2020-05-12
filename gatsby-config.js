@@ -1,8 +1,8 @@
-const dotenv=require('dotenv');
-if(process.env.NODE_ENV!=='production')
-{
-  dotenv.config();
-}
+//const dotenv=require('dotenv');
+// if(process.env.NODE_ENV!=='production')
+// {
+//   dotenv.config();
+// }
 module.exports = {
   siteMetadata: {
     title: `Gatsby Starter Blog With Contentful`,
@@ -85,7 +85,7 @@ module.exports = {
       resolve:`gatsby-source-contentful`,
       options:{
         spaceId:`kyd8nm5y6g2s`,
-        accessToken:process.env.CONTENTFUL_ACCESS_TOKEN
+        accessToken:`y8NFDTWT1qjHnAzWpYUS1N7aIvknnfLp6M2-2-fsl3Y`
       }
     },
     `@contentful/gatsby-transformer-contentful-richtext`,
